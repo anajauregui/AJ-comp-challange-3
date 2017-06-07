@@ -148,11 +148,9 @@ main {
 
 header {
   width: 100%;
-  height: 20vh;
   background-color: #FFFFFF;
   display: flex;
   flex-direction: column;
-  height: 30vh;
 }
 
 .top-header {
@@ -207,7 +205,7 @@ header {
 
 .search-bar {
   display: flex;
-  width: 79.5%;
+  width: 85%;
 }
 
 .search-bar input {
@@ -333,6 +331,15 @@ header {
 
 p .one {
   margin-left: 30px;
+}
+
+.more-prompt {
+  display: none;
+}
+
+.more-arrow {
+  height: 10px;
+  width: 15px;
 }
 
 .graphs {
@@ -603,18 +610,9 @@ tbody tr {
 
 /***********MEDIA QUERIES****************/
 
-/*@media screen and (max-width: 1400px) {
-  header {
-    height: 25vh;
-  }*/
-
 @media screen and (max-width: 1210px) {
   .categories div {
     margin: 8px;
-  }
-
-  header {
-    height: 30vh;
   }
 
   .graphs {
@@ -708,10 +706,6 @@ tbody tr {
 }
 
 @media screen and (max-width: 910px) {
-  header {
-    height: 40vh;
-  }
-
   .post-header {
     position: relative;
     margin: auto;
@@ -742,6 +736,145 @@ tbody tr {
   .click-headers {
     justify-content: space-around;
     margin-top: 22px;
+  }
+
+  .script {
+    margin-right: 80px;
+  }
+
+}
+
+@media screen and (max-width: 780px) {
+  .account-info {
+    display: none;
+  }
+
+  .search-bar {
+    width: 90%;
+  }
+
+  .post-header p {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+  }
+
+  .decor {
+    display: none;
+  }
+
+  .click-headers span:nth-child(5) {
+    display: none;
+  }
+
+  .click-headers span:nth-child(6) {
+    display: none;
+  }
+
+  .click-headers span:nth-child(7) {
+    display: none;
+  }
+
+  .more-prompt {
+    display: inline-flex;
+  }
+
+  .script {
+    margin-right: 75px;
+  }
+
+  .social-buttons {
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .soc-btn {
+    height: 60px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .soc-media-icon {
+    margin-right: 10px;
+  }
+
+}
+
+@media screen and (max-width: 675px) {
+  .post-header h2 {
+    font-size: large;
+  }
+
+  .click-headers {
+    margin: 0;
+  }
+
+  .graphs {
+    height: auto;
+  }
+
+  .circle-graphs {
+    display: block;
+    margin-bottom: 0;
+    /*width: 25%;*/
+    width: inherit;
+  }
+
+  .circle-chart {
+    margin-bottom: 20px;
+  }
+
+  .job-table tr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .job-data {
+    padding-bottom: 15px;
+  }
+
+}
+
+@media screen and (max-width: 595px) {
+  .post-header h2 {
+    font-size: inherit;
+  }
+
+  .click-headers span:nth-child(4) {
+    display: none;
+  }
+
+  .circle-graphs {
+    width: inherit;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .hr-split-arrow {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .post-header {
+    width: inherit;
+  }
+
+  .click-headers span:nth-child(3) {
+    display: none;
+  }
+
+  .circle-graphs {
+    width: inherit;
+  }
+
+  .applicants-graph {
+    height: 175px;
+    width: 275px;
   }
 
 }
