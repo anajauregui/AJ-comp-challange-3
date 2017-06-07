@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Static-Comp #3</title>
+  </head>
+  <body>
+    <nav>
+      <section class="img-name">
+        <img class="profile-pic" src="assets/Stat-comp3-profile.jpg" alt="profile-img">
+        <p class="name">Newton Barley <img class="name-arrow" src="assets/001-down-arrow.svg"></p>
+      </section>
+      <section class="main">
+        <p>Main</p>
+        <label>
+          <img class="nav-icons" src="assets/023-home-page.svg" alt="Home icon">   HOME
+        </label>
+        <label>
+          <img class="nav-icons"  src="assets/021-briefcase.svg" alt="Breifcase icon"> JOBS
+        </label>
+        <label>
+        <img class="nav-icons" src="assets/022-resume-document.svg" alt="Resume icon"> RESUMES
+        </label>
+        <label>
+        <img class="nav-icons" src="assets/020-clipboard.svg" alt="Tasks icon"> TASKS
+        </label>
+        <label>
+        <img class="nav-icons" src="assets/019-calendar.svg" alt="Calendar icon"> CALENDAR
+        </label>
+      </section>
+      <section class="admin-nav">
+        <p>Admin</p>
+        <label>
+          <img class="nav-icons" src="assets/018-profile.svg" alt="Users icon"> USERS
+        </label>
+        <label>
+          <img class="nav-icons" src="assets/017-placeholder-filled-point.svg" alt="Location icon"> LOCATIONS
+        </label>
+        <label>
+          <img class="nav-icons" src="assets/015-network.svg" alt="Workflow icon"> WORKFLOWS
+        </label>
+        <label>
+          <img class="nav-icons" src="assets/014-job-search.svg" alt="Job board icon"> JOB BOARDS
+        </label>
+        <label>
+          <img class="nav-icons" src="assets/013-symbol.svg" alt="Social icon"> SOCIAL
+        </label>
+      </section>
+      <section class="categories">
+        <p>Categories</p>
+        <div>
+          <input class="admin" type="checkbox">
+          <label> Administrative</label>
+        </div>
+        <div>
+          <input class="design" type="checkbox">
+          <label> Design</label>
+        </div>
+        <div>
+          <input class="exec" type="checkbox">
+          <label> Executive</label>
+        </div>
+        <div>
+          <input class="hr" type="checkbox">
+          <label> Human Resources</label>
+        </div>
+      </section>
+    </nav>
+    <main>
+      <header>
+      <section class="top-header">
+        <div class="shrink-menu">
+          <img class="mini-menu-arrow"   src="assets/002-left-arrow.svg">
+          <img class="mini-menu"   src="assets/001-interface.svg" alt="Shrink menu   icon">
+        </div>
+        <div class="search-bar">
+          <img class="search" src="assets/001-magnifying-glass.svg" alt="Search icon">
+          <input type="text" placeholder="Search for a job, task or resume">
+        </div>
+        <section class="account-info">
+        <div class="user">
+          <img class="account" src="assets/004-people.svg" alt="User Account icon">
+        </div>
+        <div class="cal-add">
+          <img class="schedule" src="assets/002-time.svg" alt="Add to calendar icon">
+        </div>
+        <div class="grid">
+          <img class="blocks" src="assets/003-squares.svg" alt="Grid icon">
+        </div>
+        </section>
+      </section>
+        <div class="post-header">
+          <h2>Customer Service Respresentative</h2>
+          <img class="location-icon" src="assets/017-placeholder-filled-point.svg" alt="Location icon">
+          <p>San Francisco, CA <span class="decor"></span> <span class="post-link">Preview this post</span></p>
+        </div>
+        <section class="right-side-edit">
+          <div class="border-both">
+            <div class="green-dot"></div>
+            <p>OPEN</p>
+          </div>
+          <div class="edits">
+            <img class="ed-img" src="assets/007-bookmark.svg" alt="Bookmark icon">
+          </div>
+          <div class="edits">
+            <img class="ed-img" src="assets/005-edit.svg" alt="Pencil icon">
+          </div>
+          <div class="edits">
+            <img class="ed-img" src="assets/006-garbage.svg" alt="Trash icon">
+          </div>
+        </section>
+        <section class="click-headers">
+          <p>
+            <span class="one">SUMMARY</span>
+            <span>APPLICANTS</span>
+            <span>JOB BOARDS</span>
+            <span>INTERVIEWS</span>
+            <span>ACTIVITY</span>
+            <span>BROADCAST</span>
+            <span>NOTIFICATIONS</span>
+          </p>
+        </section>
+      </header>
+      <section class="graphs">
+        <article class="circle-graphs">
+          <div class="circle-chart applicants">
+            <div class="circle-info">
+              <p class="num">3,154</p>
+              <p class="type">APPLICANTS</p>
+            </div>
+          </div>
+          <div class="circle-chart interviews">
+            <div class="circle-info">
+              <p class="num">1,546</p>
+              <p class="type">INTERVIEWS</p>
+            </div>
+          </div>
+          <div class="circle-chart forwards">
+            <div class="circle-info">
+              <p class="num">912</p>
+              <p class="type">FORWARDS</p>
+            </div>
+          </div>
+          </article>
+            <img class="applicants-graph" src="assets/stat-graph.png" alt="">
+            <div class="stat-btns stat-btn-one">
+              <button class="round-btn">TOTALS • Out of 5,231 views</button>
+            </div>
+            <div class="stat-btns stat-btn-two">
+              <button class="round-btn">APPLICANTS/DAY</button>
+            </div>
+        </article>
+      </section>
+      <hr class="hr-one"><img class="hr-split-arrow" src="assets/002-arrows.svg"><hr>
+      <section class="table-social">
+        <table class="job-table">
+          <thead class="table-header">
+            <tr>
+              <th class="main-th" colspan="2">JOB DESCRIPTION <button class="edit-job-btn"><img class="pencil" src="assets/005-edit.svg"> EDIT</button></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="job-data">POSITION TITLE</th>
+              <td class="job-data-content">Customer Service Representative</td>
+            </tr>
+            <tr>
+              <th class="job-data">LOCATION</th>
+              <td class="job-data-content">San Francisco, CA</td>
+            </tr>
+            <tr>
+              <th class="job-data">EMPLOYMENT TITLE</th>
+              <td class="job-data-content">Full-time</td>
+            </tr>
+            <tr>
+              <th class="job-data">EXPERIENCE</th>
+              <td class="job-data-content">Mid-level</td>
+            </tr>
+            <tr>
+              <th class="job-data">STATUS</th>
+              <td class="job-data-content">Open</td>
+            </tr>
+            <tr>
+              <th class="job-data script">DESCRIPTION</th>
+              <td class="job-data-content">The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on the various product shizzle; helping the bidness reduce customer service wait times while doing a backhand spring and eatinga ham sandwich.</td>
+            </tr>
+            <tr>
+              <th class="job-data">HIRING LEAD</th>
+              <td class="job-data-content tom"><img class="tom-pic" src="assets/tom-dizzy.jpg">Tom Tizzy</td>
+            </tr>
+            <tr>
+              <th class="job-data">APPROVED SALARY</th>
+              <td class="job-data-content">$58,000</td>
+            </tr>
+          </tbody>
+        </table>
+        <aside class="social-media">
+          <section class="social-buttons">
+            <button class="soc-btn fb-post" type="button"><img class="soc-media-icon" src="assets/012-facebook-logo.svg" alt="Facebook icon"> Post to Facebook</button>
+            <button class="soc-btn tweet-post" type="button"><img class="soc-media-icon" src="assets/011-twitter-logo-silhouette.svg" alt="Twitter icon"> Tweet this job</button>
+            <button class="soc-btn linkdin-post" type="button"><img class="soc-media-icon" src="assets/010-linkedin-sign.svg" alt="Linkdin icon"> Post to Linkdin</button>
+          </section>
+          <section class="applicant-links">
+            <div class="article one">
+              <img class="globe-icon" src="assets/009-space.svg" alt="Globe icon">
+              <h3>Link to this Job</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam pharetra ex ac imperdiet.</p>
+              <div class="link-btn">
+                <input class="link-input" type="text" placeholder="http://loremipsum/dol.sol.com">
+                <button class="copy-btn" type="button">Copy</button>
+              </div>
+            </div>
+            <div class="article two">
+              <img class="globe-icon" src="assets/003-cogwheel.svg" alt="Icon">
+              <h3>Use the Button Widget</h3>
+              <p>The widget embeds the buttons for sharing the job for submitting a resume to your website.</p>
+              <div class="link-btn">
+                <input class="link-input" type="text" placeholder="http://loremipsum/dol.sol.com">
+                <button class="copy-btn" type="button">Copy</button>
+              </div>
+            </div>
+            <div class="article three">
+              <img class="globe-icon" src="assets/008-cursor.svg" alt="Send icon">
+              <h3>Upload Resumes by Email</h3>
+              <p>You can automatically upload multiple resumes to this job by emailing the address below</p>
+              <div class="link-btn">
+                <input class="link-input" type="text" placeholder="tomtizzy@gmail.com">
+              </div>
+            </div>
+          </section>
+        </aside>
+      </section>
+    </main>
+
+  </body>
+
+</html>
